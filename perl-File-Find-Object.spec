@@ -15,6 +15,7 @@ Url: 		http://search.cpan.org/dist/%{module}
 BuildRequires: perl-devel
 %endif
 BuildRequires: perl(Class::Accessor)
+BuildRoot: 	%{_tmppath}/%{name}-buildroot/
 BuildArch: noarch
 
 %description
