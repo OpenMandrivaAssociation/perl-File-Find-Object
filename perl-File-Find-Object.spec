@@ -1,6 +1,6 @@
 %define module File-Find-Object
 %define name perl-%{module}
-%define version 0.0.8
+%define version 0.0.9
 %define release %mkrel 1
 
 Summary: 	File::Find like object
@@ -9,14 +9,11 @@ Version: 	%{version}
 Release: 	%{release}
 License: 	GPL or Artistic
 Group: 		Development/Perl
-Source: 	http://search.cpan.org/CPAN/authors/id/N/NA/NANARDON/File-Find-Object/%{module}-%{version}.tar.gz
-Url: 		http://search.cpan.org/dist/%{module}
-%if %mdkversion < 200600
-BuildRequires: perl-devel
-%endif
+URL:            http://search.cpan.org/dist/%{module}
+Source:         http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tar.gz
 BuildRequires: perl(Class::Accessor)
-BuildRoot: 	%{_tmppath}/%{name}-buildroot/
 BuildArch: noarch
+BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
 %description
 File::Find::Object does same job of File::Find but trough an object and
@@ -34,11 +31,11 @@ application.
 make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %clean 
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
