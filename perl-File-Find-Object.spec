@@ -11,7 +11,7 @@ License: 	GPL or Artistic
 Group: 		Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tar.gz
-BuildRequires: perl(Class::Accessor)
+BuildRequires: perl(Class::XSAccessor)
 BuildArch: noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
