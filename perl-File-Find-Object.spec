@@ -1,6 +1,6 @@
 %define module File-Find-Object
 %define name perl-%{module}
-%define version 0.2.0
+%define version 0.2.1
 %define release %mkrel 1
 
 Summary: 	File::Find like object
