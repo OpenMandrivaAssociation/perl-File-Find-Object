@@ -21,7 +21,7 @@ using an iterator. It allow to perform multiple tree parsing in same
 application.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -qn %{upstream_name}-v%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
