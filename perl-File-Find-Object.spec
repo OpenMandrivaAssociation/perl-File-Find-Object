@@ -2,14 +2,15 @@
 %define upstream_version v0.2.8
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.2.9
+Version:	%perl_convert_version 0.2.11
 Release:	1
 
 Summary:	File::Find like object
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/File-Find-Object-v0.2.9.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-v0.2.11.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Class::XSAccessor)
@@ -36,5 +37,6 @@ make test
 %files
 %{_mandir}/*/*
 %{perl_vendorlib}/*
+
 
 
