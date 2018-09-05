@@ -14,6 +14,8 @@ Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Class::XSAccessor)
+# For "make test"
+BuildRequires:	perl(Test::More)
 BuildArch:	noarch
 
 %description
