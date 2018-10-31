@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.3.2
-Release:	1
+Release:	2
 
 Summary:	File::Find like object
 
