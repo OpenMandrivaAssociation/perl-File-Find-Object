@@ -24,20 +24,20 @@ using an iterator. It allow to perform multiple tree parsing in same
 application.
 
 %prep
-%setup -qn %{upstream_name}-v%{version}
+%autosetup -p1 -n %{upstream_name}-v%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
-%{_mandir}/*/*
+%doc %{_mandir}/*/*
 %{perl_vendorlib}/*
 
 
