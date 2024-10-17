@@ -9,7 +9,7 @@ Summary:	File::Find like object
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/File::Find::Object
+Url:		https://metacpan.org/pod/File::Find::Object
 Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
