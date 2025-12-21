@@ -12,6 +12,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/File::Find::Object
 Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Class::XSAccessor)
 # For "make test"
