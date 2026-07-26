@@ -1,16 +1,14 @@
 %define upstream_name    File-Find-Object
-%define upstream_version 0.3.9
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.3.9
+Release:	2
 
 Summary:	File::Find like object
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/shlomif/perl-file-find-object
-Source0:	https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/File-Find-Object-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/File-Find-Object-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
