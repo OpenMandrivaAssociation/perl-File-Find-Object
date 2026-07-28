@@ -1,7 +1,7 @@
 %define upstream_name    File-Find-Object
 Name:		perl-%{upstream_name}
 Version:	0.3.9
-Release:	2
+Release:	3
 
 Summary:	File::Find like object
 
@@ -23,7 +23,7 @@ using an iterator. It allow to perform multiple tree parsing in same
 application.
 
 %prep
-%autosetup -p1 -n %{upstream_name}-v%{version}
+%autosetup -p1 -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
