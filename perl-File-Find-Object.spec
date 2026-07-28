@@ -1,7 +1,7 @@
 %define upstream_name    File-Find-Object
 Name:		perl-%{upstream_name}
 Version:	0.3.9
-Release:	3
+Release:	4
 
 Summary:	File::Find like object
 
@@ -15,6 +15,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl(Class::XSAccessor)
 # For "make test"
 BuildRequires:	perl(Test::More)
+BuildRequires:	perl(Test::File)
 BuildArch:	noarch
 
 %description
